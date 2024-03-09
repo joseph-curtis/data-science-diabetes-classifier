@@ -68,7 +68,7 @@ for column in binary_columns:
 
 ###### Logistic Regression algorithm ######
 
-# make Dataframe for Logistic model
+# copy Dataframe for Logistic model
 log_df = reduced_df.copy(deep=True)
 
 # Selecting numerical columns (excluding binary/boolean columns)
@@ -83,8 +83,8 @@ log_df[numerical_columns] = scaler.fit_transform(log_df[numerical_columns])
 mylog_model = linear_model.LogisticRegression(solver='saga', max_iter=1000)
 
 # 'X' is the feature set and 'y' is the target variable
-X_log = reduced_df.drop('Diabetes_binary', axis=1)
-y_log = reduced_df['Diabetes_binary'].astype('bool')  # Ensuring the target is boolean
+X_log = log_df.drop('Diabetes_binary', axis=1)
+y_log = log_df['Diabetes_binary'].astype('bool')  # Ensuring the target is boolean
 
 # Splitting the dataset into the Training set and Test set
 X_log_train, X_log_test, y_log_train, y_log_test = model_selection.train_test_split(X_log, y_log, test_size=0.25, random_state=42)
@@ -103,16 +103,16 @@ log_scores = cross_val_score(mylog_model, X_log, y_log)
 # This shows the average score. Print 'scores' to see an array of individual iteration scores.
 print("Logistic Regression Average Prediction Score: ", log_scores.mean())
 
-accuracy = accuracy_score(y_log_test, y_pred_log)
-conf_matrix = confusion_matrix(y_log_test, y_pred_log)
-class_report = classification_report(y_log_test, y_pred_log)
+accuracy_log = accuracy_score(y_log_test, y_pred_log)
+conf_matrix_log = confusion_matrix(y_log_test, y_pred_log)
+class_report_log = classification_report(y_log_test, y_pred_log)
 
-print("\nLogistic Regression prediction results:")
-print(f"Accuracy: {accuracy}")
+print("\nLogistic Regression (single) prediction results:")
+print(f"Accuracy: {round(accuracy_log*100,2)} %")
 print("Confusion Matrix:")
-print(conf_matrix)
+print(conf_matrix_log)
 print("Classification Report:")
-print(class_report)
+print(class_report_log)
 
 ######  Random Forest algorithm ######
 
@@ -153,16 +153,16 @@ rf_scores = cross_val_score(rf_classifier, X_rf, y_rf)
 # This shows the average score. Print 'scores' to see an array of individual iteration scores.
 print("Random Forest Average Prediction Score: ", rf_scores.mean())
 
-accuracy = accuracy_score(y_rf_test, y_pred_rf)
-conf_matrix = confusion_matrix(y_rf_test, y_pred_rf)
-class_report = classification_report(y_rf_test, y_pred_rf)
+accuracy_rf = accuracy_score(y_rf_test, y_pred_rf)
+conf_matrix_rf = confusion_matrix(y_rf_test, y_pred_rf)
+class_report_rf = classification_report(y_rf_test, y_pred_rf)
 
 print("\nRandom Forest (single) prediction results:")
-print(f"Accuracy: {accuracy}")
+print(f"Accuracy: {round(accuracy_rf*100,2)} %")
 print("Confusion Matrix:")
-print(conf_matrix)
+print(conf_matrix_rf)
 print("Classification Report:")
-print(class_report)
+print(class_report_rf)
 
 
 
