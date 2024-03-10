@@ -19,9 +19,16 @@ We experiment with various machine learning models, including Logistic Regressio
 
 ## Usage
 
-To view and interact with the notebook, visit the Kaggle project page:
+Options to view and interact with the notebook:
 
-[At-Risk Diabetes Classifier Notebook](https://www.kaggle.com/josephcurtis/at-risk-diabetes-classifier)
+1. Visit the Kaggle project page:
+[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg "Open in Kaggle")](https://www.kaggle.com/code/josephcurtis/at-risk-diabetes-classifier)
+
+2. Go to this project's Binder page:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joseph-curtis/data-science-diabetes-classifier.git/HEAD?labpath=notebook-local.ipynb)
+
+3. Download this repo and run it on your local machine:
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/joseph-curtis/data-science-diabetes-classifier/total?style=for-the-badge&logo=github&logoColor=white&label=DOWNLOAD%20NOW&color=372a4a)](https://github.com/joseph-curtis/data-science-diabetes-classifier/archive/refs/heads/master.zip)
 
 ## Contributing
 
@@ -29,4 +36,4 @@ Contributions are always welcome! Please feel free to submit pull requests or op
 
 ## License
 
-This project is open-sourced under the [MIT License](LICENSE.md).
+This project is open-sourced under the [MIT License](LICENSE).
