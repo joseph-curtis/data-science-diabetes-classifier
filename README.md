@@ -28,7 +28,8 @@ Options to view and interact with the notebook:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joseph-curtis/data-science-diabetes-classifier.git/HEAD?labpath=notebook-local.ipynb)
 
 3. Download this repo and run it on your local machine:
-[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/joseph-curtis/data-science-diabetes-classifier/total?style=for-the-badge&logo=github&logoColor=white&label=DOWNLOAD%20NOW&color=372a4a)](https://github.com/joseph-curtis/data-science-diabetes-classifier/archive/refs/heads/master.zip)
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/joseph-curtis/data-science-diabetes-classifier/total?style=for-the-badge&logo=github&logoColor=white&label=DOWNLOAD%20NOW&labelColor=372a4a&color=6e5494)
+](https://github.com/joseph-curtis/data-science-diabetes-classifier/archive/refs/heads/master.zip)
 
 ## Contributing
 
