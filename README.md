@@ -37,4 +37,4 @@ Contributions are always welcome! Please feel free to submit pull requests or op
 
 ## License
 
-This project is open-sourced under the [MIT License](LICENSE).
+This project is open-sourced under the [Apache-2.0 License](LICENSE).
