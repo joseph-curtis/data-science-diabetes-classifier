@@ -3,6 +3,9 @@
 
 This project aims to leverage machine learning to identify individuals at risk of diabetes based on various health indicators. By analyzing a dataset of health measures and demographic information, we train a supervised machine learning model to predict the likelihood of a person having diabetes.
 
+## Documentation
+See project wiki or [click here](https://github.com/joseph-curtis/data-science-diabetes-classifier/wiki/Computer-Science-Capstone) for the Computer Science Capstone write-up.
+
 ## Project Overview
 
 The At-Risk Diabetes Classifier uses a dataset that includes health indicators such as BMI, age, smoking status, physical activity, and others, to predict diabetes status. Our approach involves preprocessing the data, selecting relevant features, splitting the dataset into training and testing sets, and then training and evaluating a machine learning model.
